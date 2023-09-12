@@ -78,3 +78,43 @@ body {
 #semenmenu {
   display: none;
 }
+
+/*media queris */
+
+/*laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/*tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #semenmenu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 20rem;
+    height: 100vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+}
+
+/*mobile  */
+@media (max-width: 750px) {
+  html {
+    font-size: 55%;
+  }
+}
