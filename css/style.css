@@ -20,6 +20,10 @@ body {
   min-height: 2000px;
 } 
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*navbar*/
 
 .navbar {
@@ -193,10 +197,37 @@ body {
   }
 }
 
-/* about selection*/
+.about .row{
+  flex-wrap: wrap;
+}
+
+.about .row .about-img img {
+  height: 24rem;
+  object-fit: cover;
+  object-position: cover
+  ;
+}
+
+.about .row .content {
+  padding: 0;
+}
+
+
+.about .row .content h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+} 
+
+
+.about .row .content p {
+  font-size: 1.6rem;
+}
+
+/* about css*/
 
 .about {
   padding: 10rem 7% 1.4rem;
+  height: 100vh;
 }
 
 .about h2 {
@@ -205,8 +236,10 @@ body {
   margin-bottom: 3rem;
 }
 
+
 .about .row {
   display: flex;
+  margin: 5rem 5rem;
 }
 
 .about .row .about-img {
@@ -221,6 +254,129 @@ width: 100%;
 flex : 1 1 35rem;
 padding: 0 1rem;
 }
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+/*menu css*/
+
+.menu {
+  padding: 10rem 7% 1.4rem;
+}
+
+.menu h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.menu .row {
+  display: flex;
+}
+
+.menu .row .menu-img {
+  flex: 1 1 45rem;
+}
+
+.menu .row .menu-img img {
+width: 100%;
+}
+
+.menu .row .content {
+flex : 1 1 35rem;
+padding: 0 1rem;
+}
+
+.menu .image {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.menu p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 1.6;
+  padding-bottom: 2rem;
+}
+
+.menu-img {
+  text-align: center;
+
+}
+/*kontak css*/
+
+
+.kontak {
+  padding: 10rem 7% 1.4rem;
+}
+
+
+.kontak .row {
+  display: flex;
+  margin: 2rem 5rem 5rem;
+  background-color: var(--primary);
+ transition-duration: 2s;
+  flex-wrap: wrap;
+  
+}
+
+.kontak .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+
+/* footer */
+
+footer{
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding:  1rem 0;
+}
+
+footer .socials a {
+  color: white;
+  margin: 1rem;
+}
+
+footer .socials a:hover{
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: white;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit a {
+   color: var(--bg);
+    font-weight: 400;
+  }
+
+
 /*mobile  */
 @media (max-width: 750px) {
   html {
