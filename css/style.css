@@ -90,10 +90,10 @@ html {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image:url('../asset/layarr.png');
+    background-image:url('../asset/latarr.PNG');
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: center;
+    background-position: center;  
   }
 
   .hero::after {
